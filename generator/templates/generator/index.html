@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block main %}
+
+<div class="container-fluid">
+    
+    <div class="row d-flex flex-lg-row-reverse">
+        <div class="col-sm-12 col-lg-6 p-5 d-none d-sm-block">
+            <img src="{% static 'generator/images/illustration.png'%}" alt="" width="400" height="400">
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5" style="margin-top: 50px;">
+            <h3 class="heading">Strong Passwords Made Easy</h3>
+            <h6 class="mt-3">Secure Your Digital Life with SecureMe.</h6>
+            <p>Don't be a target for hackers. SecureMe's powerful password generator creates random, complex passwords that keep your data safe.</p>
+            <a class="btn btn-lg rounded-3 home-btn text-light" href="{% url 'generate_password'%}" role="button" style="background-color: var(--custom-button);">Let's get Started</a>
+        </div>
+        
+    </div>
+</div>
+
+{% endblock main%}

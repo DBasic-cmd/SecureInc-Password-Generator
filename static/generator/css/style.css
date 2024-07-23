@@ -1,0 +1,185 @@
+/**
+ * Global Styles
+ *
+ * Resets default browser styles and sets up a consistent layout.
+ */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+/**
+ * Custom Variables
+ *
+ * Defines custom variables for colors and other styles.
+ */
+:root {
+    /**
+     * Primary color
+     * @type {color}
+     * @example #1e1e1e
+     */
+    --primary-color: #1e1e1e;
+
+    /**
+     * Secondary color
+     * @type {color}
+     * @example #f5f5f5
+     */
+    --secondary-color: #f5f5f5;
+
+    /**
+     * Background color
+     * @type {color}
+     * @example #ffffb3
+     */
+    --bg-color: #ffffb3;
+
+    /**
+     * Background assist color
+     * @type {color}
+     * @example #6e0d25
+     */
+    --bg-assist: #6e0d25;
+
+    /**
+     * Custom button color
+     * @type {color}
+     * @example rgb(175, 93, 175)
+     */
+    --custom-button: rgb(175, 93, 175);
+}
+
+
+
+/**
+ * Button Styles
+ *
+ * Styles for buttons, including the password button.
+ */
+button, .password_button {
+    /**
+     * Removes underline from buttons
+     */
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/**
+ * Heading Styles
+ *
+ * Styles for headings, including a gradient effect.
+ */
+h1 {
+    /**
+     * Centers the heading text
+     */
+    text-align: center;
+
+    /**
+     * Applies a gradient effect to the heading text
+     */
+    background: linear-gradient(-45deg, #0051ff, #00d7c1, #ff0);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /**
+     * Sets the text color
+     */
+    color: #272838;
+
+    /**
+     * Adds a stroke effect to the heading text
+     */
+    -webkit-text-stroke: 3px transparent;
+}
+
+/**
+ * Form Styles
+ *
+ * Styles for forms, including padding, width, and border radius.
+ */
+form {
+    background-color: #fff;
+    padding: 50px;
+    width: 550px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/**
+ * Label Styles
+ *
+ * Styles for labels, including display and margin.
+ */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/**
+ * Input Styles
+ *
+ * Styles for input fields, including margin and padding.
+ */
+input[type="number"], input[type="checkbox"] {
+    margin-bottom: 16px;
+}
+
+/**
+ * Submit Button Styles
+ *
+ * Styles for submit buttons, including background color, text color, and padding.
+ */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/**
+ * Hover Effect for Submit Button
+ *
+ * Changes the background color on hover.
+ */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/**
+ * Generated Password Styles
+ *
+ * Styles for the generated password container, including background color, padding, and text alignment.
+ */
+#generated-password {
+    background-color: #ffffff;
+    text-align: center;
+    margin-right: 20px;
+}
+
+/**
+ * Button Styles (again, for some reason)
+ *
+ * Styles for buttons, including background color, text color, and padding.
+ */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+} 
+
+/**
+ * Hover Effect for Button
+ *
+ * Changes the background color on hover.
+ */
+button:hover {
+    background-color: #0056b3;
+}
